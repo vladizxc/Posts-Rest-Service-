@@ -84,4 +84,15 @@ public class Post {
     public void setCreationDate(LocalDateTime creationDate) {
         this.creationDate = creationDate;
     }
+
+    public PostDto toDto(){
+        return new PostDto(
+                id,
+                author,
+                title,
+                numberOfLikes,
+                numberOfDislikes,
+                creationDate.toLocalDate()
+        );
+    }
 }
