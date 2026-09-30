@@ -1,6 +1,7 @@
 package org.codekitchen.entity;
 
 import jakarta.persistence.*;
+import org.codekitchen.entity.dto.PostDto;
 
 import java.time.LocalDateTime;
 
@@ -28,6 +29,15 @@ public class Post {
     private LocalDateTime creationDate;
 
     public Post() {}
+
+    public Post(int id, String title, String author, int numberOfLikes, int numberOfDislikes, LocalDateTime creationDate) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.numberOfLikes = numberOfLikes;
+        this.numberOfDislikes = numberOfDislikes;
+        this.creationDate = creationDate;
+    }
 
     public Post(String title, String author, int numberOfLikes, int numberOfDislikes, LocalDateTime creationDate) {
         this.title = title;

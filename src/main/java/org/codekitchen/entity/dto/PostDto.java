@@ -1,7 +1,6 @@
-package org.codekitchen.entity;
+package org.codekitchen.entity.dto;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class PostDto {
     private final int id;
