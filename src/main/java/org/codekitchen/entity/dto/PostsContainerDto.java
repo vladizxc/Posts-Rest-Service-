@@ -1,6 +1,4 @@
-package org.codekitchen.entity;
-
-import org.codekitchen.entity.dto.PostDto;
+package org.codekitchen.entity.dto;
 
 import java.util.List;
 
